@@ -1,12 +1,14 @@
 /* ---------
-  font-awesome
+ google-fonts
 ------------ */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 
 
 
-/* common styles */
+/* -----
+Common styles
+----------- */
 body{
    
     font-family: 'Poppins', sans-serif;

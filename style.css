@@ -480,6 +480,7 @@ media-queary
         padding-right: 15px;
         box-sizing: border-box;
     }
+    /* blog-section */
     .blogs{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -490,6 +491,7 @@ media-queary
     .thumbnail {
         width: 100%;
     }
+    /* hightlight-section */
     .highlight-text h1 {
         font-size: 34px;
     }

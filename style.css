@@ -182,6 +182,10 @@ Blog section
     width: 50%;
     text-align: center;
 }
+.footer-logo img {
+    width: 480px;
+    height: 110px;
+}
 .social-menu ul {
     transform: translate(1%, -26%);
     display: flex;

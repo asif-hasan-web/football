@@ -1,14 +1,14 @@
-/* ---------
+/* =======
  google-fonts
------------- */
+=======--- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 
 
 
-/* -----
+/* -----===
 Common styles
------------ */
+=======--==== */
 body{
    
     font-family: 'Poppins', sans-serif;
@@ -20,9 +20,9 @@ body{
     margin: auto;
     overflow: hidden;
 }
-/*--------
+/*--------=====
  header-area
---------- */
+=========== */
 .page-header{
     background-color:#2D25A0 ;
 }
@@ -55,6 +55,7 @@ body{
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
+    display: inline-block;
 }
 .link-btn:hover {
     opacity: 0.8;
@@ -69,9 +70,9 @@ body{
 .link-btn:hover.link-btn i {
     transform: translateX(6px);
 }
-/* --------------
+/* =======----====-
 Blog section
------------------ */
+=======-----====--- */
 .blogs{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -151,9 +152,9 @@ Blog section
     color: #0a7ee2;
     transition: 1s;
 }
-/*----------
+/*=======-===
  Highlight-Area
- ------------ */
+ =======---=== */
  .highlight-area {
     display: flex;
     align-items: center;
@@ -173,10 +174,160 @@ Blog section
     margin-bottom: 22px;
 }
 
+/* =======-
+gallary
+======= */
+#gallery {
+    margin: 93px auto;
+}
+.gallery-heading{
+    color: #173562;
+    
+}
+.photo-frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
-/*-----------
+.photo-1 {
+    width: 455px;
+    height: 342px;
+
+}
+
+.photo-1 img,
+.photo img {
+    width: 99%;
+    height: 98%;
+}
+.photo {
+    width: 273px;
+    height: 205px;
+}
+.photo-1 img:hover {
+    opacity: 0.7;
+    transition: 1s;
+}
+.photo img:hover {
+    opacity: 0.7;
+    transition: 1s;
+}
+
+/* =======----
+Tournament-area
+=======------- */
+#tournament{
+    background: #7a2d65;
+    color: #fff;
+    padding: 30px 0;
+}
+.tournament-heading,
+.gallery-heading{
+    font-size: 23px;
+    text-transform: uppercase;
+    
+}
+
+
+.stats-boxlist {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.box-content {
+    background-color: rgba(0,0,0,.3);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    height: 144px;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding: 1px 11px;
+}
+
+.grid-box {
+    width: 23%;
+    margin-bottom: 16px;
+}
+
+.stats-lebel {
+    font-size: 18px;
+    color: rgba(255,255,255,.8);
+}
+
+.stats-value {
+    color: #7a2d65;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+span.stats-facts {
+    font-size: 24px;
+}
+
+.stats-bar {
+    height: 4px;
+    width: 100%;
+    background-color: #7a2d65;
+    display: grid;
+    position: relative;
+    bottom: 10px;
+}
+
+.stats-bar-filter {
+    background-color: #7a2d65;
+    border-radius: 50px;
+    height: 4px;
+}
+.stats-lebel.gray {
+    color: #969292;
+}
+.gray {
+    color: #bbb1b1;
+}
+
+.start-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stats-player {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+
+.stats-player-headshort img {
+    width: 50px;
+    height: 50px;
+    border-radius: 54%;
+}
+a.goals-btn {
+    text-decoration: none;
+    color: #f9daf2;
+    background-color: #731f5c;
+    padding: 11px 49px;
+    border: 2px solid;
+    border-radius: 26px;
+    font-size: 18px;
+    display: inline-block;
+    text-transform: capitalize;
+    transition: 0.5s ease;
+}
+
+a.goals-btn:hover {
+    background-color: #551f47;
+}
+
+/*=============
  Footer-area
------------ */
+============== */
+.footer-area {
+    padding: 75px 0;
+}
 .allcontent {
     margin: 0 auto;
     width: 50%;
@@ -200,7 +351,7 @@ Blog section
     font-size: 30px;
     line-height: 60px;
     transition: 0.6%;
-    color: #000;
+    color: #969BAB;
 }
 .social-menu ul li .fa:hover{
    color: #fff;
@@ -231,3 +382,88 @@ Blog section
 .social-menu ul li:nth-child(4) a:hover{
     background-color: #0A66C2;
 }
+.allcontent p {
+    margin: 20px 0px;
+    font-size: 18px;
+    color: #000000;
+}
+
+
+/* ================
+media-queary 
+=============*/
+@media only screen and (max-width: 767px) {
+
+    
+    .container, .allcontent{
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    /* header-area */
+    .hero-area{
+        flex-direction: column;
+    }
+    .hero-text h1 {
+        font-size: 45px;
+        line-height: 70px;
+        margin-bottom: 17px;
+    }
+    .hero-img img {
+        width: 354px;
+        height: 373px;
+        margin-top: 43px;
+    }
+    /* blog */
+    .blogs{
+        grid-template-columns: 1fr;
+        grid-column-gap: 0;
+
+    }
+    .single-blog {
+        width: 100%;
+        height: auto;
+    }
+    .thumbnail {
+        width: 100%;
+        height: auto;
+    }
+    /* highlight-area */
+    .highlight-area {
+        align-items: stretch;
+        flex-direction: column;
+    }
+    .highlight-text h1 {
+        font-size: 45px;
+        line-height: 52px;
+    }
+    .highlight-text {
+        margin: 15px 0;
+    }
+    /* galary-area */
+    .photo-frame {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* tournament-area */
+    .tournament-heading, .gallery-heading {
+        font-size: 19px;
+    }
+    .stats-boxlist {
+        flex-direction: column;
+        align-items: center;
+    }
+    .grid-box {
+        width: 99%;
+    }
+    /* footer */
+    .footer-logo img {
+        width: 322px;
+        height: 99px;
+    }
+}
+@media only screen and (max-width: 991px) {
+   
+}
+
